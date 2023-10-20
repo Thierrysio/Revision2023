@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -37,6 +38,18 @@ namespace Revision2023.Modeles
         #endregion
 
         #region Methodes
+
+        public  List<Ville> GetLesVilles()
+        {
+            List<Ville> Resultat = new List<Ville>();
+
+            foreach(Parking unParking in this.LesParkings)         
+            {
+                Resultat.Add(unParking.LaVille);           
+            }
+
+            return Resultat;    
+        }
 
         #endregion
     }

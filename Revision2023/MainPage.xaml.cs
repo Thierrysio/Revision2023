@@ -12,13 +12,17 @@ namespace Revision2023
             Ville VI1 = new Ville("Lannion");
             Ville VI2 = new Ville("Morlaix");
             Ville VI3 = new Ville("Brest");
+            Ville VI4 = new Ville("Rennes");
+
+            int cptVille = Ville.CollClasse.Count;
 
             Parking P1 = new Parking(2.222f, 3.2f, VI1);
             Parking P2 = new Parking(5.222f, 4.2f, VI2);
             Parking P3 = new Parking(4.222f, 8.2f, VI3);
 
             Voiture V1 = new Voiture("sdfghj");
-
+            
+           
             V1.LesParkings.Add(P1);
             V1.LesParkings.Add(P3);
 
