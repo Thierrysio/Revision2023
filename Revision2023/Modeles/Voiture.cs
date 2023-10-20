@@ -45,7 +45,11 @@ namespace Revision2023.Modeles
 
             foreach(Parking unParking in this.LesParkings)         
             {
-                Resultat.Add(unParking.LaVille);           
+                if(Resultat.Contains(unParking.LaVille) == false)
+                {
+                    Resultat.Add(unParking.LaVille);
+                }
+
             }
 
             return Resultat;    
